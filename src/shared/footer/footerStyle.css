@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #1f4b43;
+  border: 2px solid green;
+  color: #fff;
+  padding: 40px;
+  text-align: start;
+}
+
+.footer-columns {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  gap: 0; 
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 -20px; 
+  padding: 0 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+
+.footer-contact {
+  text-align: start;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-left: 75px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-contact .icon {
+  font-size: 12px;
+}
+
+.footer-line {
+  border-top: 1px solid #444;
+  margin: 10px 0;
+  align-items: center;
+  margin-left: 75px;
+  margin-right: 60px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 77px;
+}
+
+.footer-bottom p {
+  margin-left: -3px;
+}
+
+.footer-bottom2 p {
+  margin-right: 60px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .footer-columns {
+      flex-direction: column;
+      margin-left: 20px;
+  }
+
+  .footer-contact {
+      margin-left: 20px;
+  }
+
+  .footer-line {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+  }
+
+  .footer-bottom2 p {
+      margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-columns {
+      margin-left: 10px;
+  }
+
+  .footer-contact {
+      margin-left: 10px;
+  }
+
+  .footer-line {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .footer-bottom {
+      margin-left: 10px;
+  }
+
+  .footer-bottom2 p {
+      margin-right: 10px;
+  }
+}

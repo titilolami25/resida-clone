@@ -1,0 +1,158 @@
+.findHome {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #1f4b43;
+  margin-top: 25px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  font-weight: normal;
+  margin-top: 25px;
+}
+
+.findHome_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 45px;
+  margin-left: 10px;
+  margin-right: 100px;
+  size-adjust: 5px;
+}
+
+.portrait {
+  position: relative;
+  flex: 0.3; 
+  margin-right: 10px; 
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-left: 110px;
+}
+
+.portrait .image-text {
+  position: absolute;
+  bottom: 10px; /* can be for portrait text position */
+  left: 125px;
+  background-color: rgba(128, 128, 128, 0.8); 
+  color: white;
+  padding: 5px;
+  border-radius: 35px;
+  font-size: 0.9em; 
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  flex: 0.6; /* can be adjust  */
+  margin-top: 5px;
+}
+
+.image-item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.image-item .image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(128, 128, 128, 0.8); 
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 0.9em; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .findHome_container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .portrait {
+    margin: 0 0 20px 0;
+  }
+
+  .portrait img {
+    margin-left: 0;
+  }
+
+  .portrait .image-text {
+    left: 10px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 20px;
+  }
+
+  .image-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .portrait img,
+  .image-item img {
+    border-radius: 10px;
+  }
+
+  .portrait .image-text,
+  .image-item .image-text {
+    font-size: 0.8em;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+
+  .portrait .image-text,
+  .image-item .image-text {
+    font-size: 0.7em;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,99 @@
+.dyproperty_container {
+  display: flex;
+  justify-content:space-between;
+  height: auto;
+  align-items: flex-start;
+  padding: 20px; 
+  position: relative;
+  padding: 80px 0px; /* Increase the top and bottom padding */
+
+}
+
+
+.flex {
+  display: flex;
+}
+
+.dyproperty_text_section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+  position: relative;
+  padding-left: 125px;
+}
+
+.dyproperty_text_content {
+  text-align: left;
+  margin-bottom: x; /* Adjust as needed */
+  z-index: 1;
+  position: relative;
+}
+
+.dyproperty_title {
+  font-size: 2.2em; 
+  font-weight: bolder;
+  color: #1f4b43;;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.dyproperty_sub_title {
+  font-size: 2.0em; 
+  font-weight: normal;
+  color:#1f4b43;
+  margin: 0;
+}
+
+.dyproperty_description {
+  font-size: 0.9em; 
+  line-height: 1.8; 
+  margin: 0; /* Remove margin to ensure consistent line spacing */
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.mini_images_container {
+  display: flex;
+  gap: 1px;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  right:85%;
+  transform: translateX(50%);
+  margin-top: 60px; 
+}
+
+.mini_image {
+  width: 35px; 
+  height: 35px; 
+  object-fit: cover;
+  position: relative;
+  right:0 ;
+  top: 0;
+  margin-right: -18px;
+  z-index: 3;
+}
+
+.dyproperty_button {
+  margin-top: 60px; 
+}
+
+.dyproperty_image_section {
+  flex: 1.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main_image {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+  margin-top: -40px;
+  
+ 
+}

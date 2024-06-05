@@ -1,0 +1,126 @@
+/* Flex container */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+.our_exp_container {
+    border: 1px; 
+    display: flex;
+    flex-direction: row;
+    padding: 0 10rem;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .our_exp_container {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .our_exp_container {
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+}
+
+/* Boxes container */
+.boxes_container {
+    display: flex;
+    gap: 1px;
+    justify-content: space-between;
+    width: 70%;
+    border: 1px;
+    padding: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -50px;
+}
+
+@media (max-width: 768px) {
+    .boxes_container {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Text */
+.text {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+    color: #1f4b43;
+    padding-left: 2rem;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+
+@media (max-width: 768px) {
+    .text {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+/* Boxes */
+.box1, 
+.box2, 
+.box3 {
+    border-radius: 10px;
+    border: 1px; 
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    overflow: hidden;
+    width: 150px;
+}
+
+.box_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.box2 .box_image {
+    object-position: center 2%;
+}
+
+/* Adjust flex-basis values to ensure they add up to 100% */
+.box1 {
+    flex-basis: 20%;
+}
+
+.box2 {
+    flex-basis: 45%;
+}
+
+.box3 {
+    flex-basis: 35%;
+}
+
+@media (max-width: 768px) {
+    .box1, .box2, .box3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .box1 {
+        flex-basis: 100%;
+    }
+    .box2 {
+        flex-basis: 100%;
+    }
+    .box3 {
+        flex-basis: 100%;
+    }
+}
+
