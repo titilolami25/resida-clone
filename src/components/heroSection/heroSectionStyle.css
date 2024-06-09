@@ -24,6 +24,7 @@
     word-break: break-word;
     text-align: center;
     gap: 3rem;
+    margin-top: 50px;
 
     font-weight:bold ;
     font-family: 'Times New Roman', Times, serif;
@@ -37,8 +38,7 @@
     word-break: break-word;
     max-width:500px ;
     margin: 0 25px;
-
-    
+  
 }
 
 .btn_container{

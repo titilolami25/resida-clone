@@ -4,6 +4,7 @@ import "./heroSectionStyle.css";
 import bgImage from "assets/image.jpg";
 import Button from "shared/button";
 
+
 const HeroSection = () => {
   return (
     <div
@@ -29,7 +30,6 @@ const HeroSection = () => {
             style={{
               width: "32%",
             }}
-            outline
             btnName={"Learn more"}
           />
         </div>
@@ -39,7 +39,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-
 
 

@@ -1,65 +1,70 @@
 import React from 'react';
-import "./contactUsStyle.css";
-import HeroSection from 'components/heroSection';
+import './contactUsStyle.css';
+import Header from 'shared/header';
+import {
+    FaFacebook,
+    FaTwitter,
+    FaInstagram,
+    FaLinkedin,
+    FaYoutube,
+    FaEnvelope,
+    FaPhone,
+    FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const ContactUsPage = () => {
     return (
-        <div>
+        <div className="contact-us-container">
+            <Header />
             <div className="contactUsPageText">
-                <p>Contact Us</p>
-            </div>
-            <div className="header">
-                <div className="headerLeft">
-                    <img src="logo.png" alt="Logo" className="logo" />
-                    <h1>Company Name</h1>
-                </div>
-                <div className="headerRight">
-                    <a href="#" className="headerLink">Contact</a>
-                    <a href="#" className="headerLink">Download App</a>
-                </div>
+                <h1>Contact Us</h1>
+                <p className="subtitle">Any question or remarks? Just write us a message!</p>
             </div>
             <div className="container">
                 <div className="leftColumn">
-                    <div className="rectangle">
-                        <h2>Title</h2>
-                        <p>Subtitle</p>
-                        <div className="socialMediaIcons">
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="socialMediaLink">Twitter</a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="socialMediaLink">Instagram</a>
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="socialMediaLink">YouTube</a>
+                    <div className="formGroup">
+                        <div className="inputGroup">
+                            <label htmlFor="firstName">First Name</label>
+                            <input type="text" id="firstName" className="input" />
+                        </div>
+                        <div className="inputGroup">
+                            <label htmlFor="lastName">Last Name</label>
+                            <input type="text" id="lastName" value="Idoko" className="input" />
                         </div>
                     </div>
-                </div>
-                <div className="rightColumn">
                     <div className="formGroup">
-                        <input type="text" placeholder="First Name" className="input" />
-                        <input type="text" placeholder="Last Name" className="input" />
-                    </div>
-                    <div className="formGroup">
-                        <input type="email" placeholder="Email" className="inputFullWidth" />
-                        <input type="tel" placeholder="Phone Number" className="inputFullWidth" />
+                        <div className="inputGroup">
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email" className="input" />
+                        </div>
+                        <div className="inputGroup">
+                            <label htmlFor="phoneNumber">Phone Number</label>
+                            <input type="text" id="phoneNumber" value="+1 012 3826 781" className="input" />
+                        </div>
                     </div>
                     <div className="subjectSelection">
                         <label>Select Subject:</label>
-                        <div className="option">
-                            <input type="radio" name="subject" defaultChecked className="radioInput" />
-                            <span>Subject 1</span>
-                        </div>
-                        <div className="option">
-                            <input type="radio" name="subject" className="radioInput" />
-                            <span>Subject 2</span>
-                        </div>
-                        <div className="option">
-                            <input type="radio" name="subject" className="radioInput" />
-                            <span>Subject 3</span>
-                        </div>
-                        <div className="option">
-                            <input type="radio" name="subject" className="radioInput" />
-                            <span>Subject 4</span>
-                        </div>
-                        <div className="option">
-                            <input type="radio" name="subject" className="radioInput" />
-                            <span>Subject 5</span>
+                        <div className="options">
+                            <div className="option">
+                                <input type="radio" name="subject" defaultChecked className="radioInput" />
+                                <span>General Inquiry</span>
+                            </div>
+                            <div className="option">
+                                <input type="radio" name="subject" className="radioInput" />
+                                <span>Payments and Fees</span>
+                            </div>
+                            <div className="option">
+                                <input type="radio" name="subject" className="radioInput" />
+                                <span>Technical</span>
+                            </div>
+                            <div className="option">
+                                <input type="radio" name="subject" className="radioInput" />
+                                <span>Registration</span>
+                            </div>
+                            <div className="option">
+                                <input type="radio" name="subject" className="radioInput" />
+                                <span>Other</span>
+                            </div>
                         </div>
                     </div>
                     <div className="messageGroup">
@@ -67,7 +72,32 @@ const ContactUsPage = () => {
                         <textarea id="message" placeholder="Write your message..." className="textarea"></textarea>
                     </div>
                     <div className="sendButton">
-                        <button type="submit" className="button">Send Message</button>
+                        <button type="submit" className="button">Send Message →</button>
+                    </div>
+                </div>
+                <div className="rightColumn">
+                    <div className="rectangle">
+                        <h2>Contact Information</h2>
+                        <p>Say something to start a live chat!</p>
+                        <div className="contactDetails">
+                            <div className="contactDetail">
+                                <FaPhone className="icon" />
+                                <p>+1 012 3826 781</p>
+                            </div>
+                            <div className="contactDetail">
+                                <FaEnvelope className="icon" />
+                                <p>demo@gmail.com</p>
+                            </div>
+                            <div className="contactDetail">
+                                <FaMapMarkerAlt className="icon" />
+                                <p>132 Dartmouth Street Boston,<br /> Massachusetts 02156 United States USA</p>
+                            </div>
+                        </div>
+                        <div className="socialMediaIcons">
+                            <FaTwitter className='icon'/>
+                            <FaInstagram className='icon'/>
+                            <FaYoutube className='icon'/>
+                        </div>
                     </div>
                 </div>
             </div>

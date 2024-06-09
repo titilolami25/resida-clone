@@ -3,61 +3,89 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10rem;
+    padding: 0 2rem;
+    background-color: #fff;
+}
+
+.logo-and-company {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 25px;
+    margin-right: 850px;
+}
+
+.company-name {
+    font-size: 8px;
+    font-weight: bold;
 }
 
 .header-cta-section {
     display: flex;
-    gap: 24px;
     align-items: center;
-    margin-left:auto;
-}
-.header-cta-section ul li {
-    list-style: none;
-    font-style: normal;
+    gap: 24px;
+    margin-left: auto; 
     
 }
 
-.header-cta-section ul li a {
+
+.header-nav-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav-item {
+    font-style: normal;
+}
+
+.header-nav-link {
     color: #1f4b43;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 14;
-    font-family: "Courier New", 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.header-button-container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+
+    .header-cta-section {
+        width: 100%;
+        justify-content: flex-end;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .company-name {
+        font-size: 18px;
+    }
+
+    .header-nav-list {
+        display: none;
+    }
+
+    .header-button-container {
+        flex-direction: row;
+        gap: 10px;
+    }
 }
 
 
-
-@media (max-width :768px){
-.header_container{
-    width: 100vw;
-    justify-content: space-between; 
-    padding: 0; 
-   
-
-}
-}
-
-.header_cta_section{
-    padding-right: 10px;    
-    flex-direction: row;
-    gap: 10px;  
-}
-
-
-.logo{
-    padding-left: 10px;
-}
-
-.menu{
-    display: block;
-}
-.header_cta_section ul {
-    display: none;
-    
-
-}
-
-.header_cta_section ul li a{
-    font-size: 12;  /* reduce size depending on mobile*/
-}

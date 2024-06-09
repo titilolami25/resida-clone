@@ -49,7 +49,7 @@
 .dyproperty_description {
   font-size: 0.9em; 
   line-height: 1.8; 
-  margin: 0; /* Remove margin to ensure consistent line spacing */
+  margin: 0; /* margin to ensure consistent line spacing */
   gap: 10px;
   margin-top: 30px;
 }
@@ -63,6 +63,7 @@
   right:85%;
   transform: translateX(50%);
   margin-top: 60px; 
+  margin-right: 40px;
 }
 
 .mini_image {
@@ -72,8 +73,9 @@
   position: relative;
   right:0 ;
   top: 0;
-  margin-right: -18px;
-  z-index: 3;
+  margin-right: -14px;
+  z-index: 1;
+  
 }
 
 .dyproperty_button {

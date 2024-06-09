@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px; 
+  
 }
 
 
@@ -45,7 +46,7 @@
   font-weight: normal;
   color: #1f4b43;
   margin: 0;
-  margin-left: -260px
+  margin-left: -275px
   
 }
 
@@ -100,7 +101,6 @@
   }
 }
 
-
 @media (max-width: 1024px) {
   .comprehensive_text_section {
     padding-left: 10;
@@ -116,14 +116,17 @@
   }
 }
 
+@media (max-width: 768px) {
+.comprehensive_title {
+  font-size: 1.5em;
+  margin-left: 25px;
+
+}
+}
   .comprehensive_text_content {
     text-align: center;
 
   }
 
 
-  .comprehensive_title {
-    font-size: 1.5em;
-    margin-right: 20px;
-  }
 
