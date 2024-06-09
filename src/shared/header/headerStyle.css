@@ -14,11 +14,11 @@
 
 .logo {
     height: 25px;
-    margin-right: 850px;
+    margin-right: 10px; 
 }
 
 .company-name {
-    font-size: 8px;
+    font-size: 14px; 
     font-weight: bold;
 }
 
@@ -26,10 +26,8 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    margin-left: auto; 
-    
+    margin-left: auto;
 }
-
 
 .header-nav-list {
     display: flex;
@@ -58,28 +56,31 @@
 
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
         padding: 0 1rem;
+        align-items: center; 
+    }
+
+    .logo-and-company {
+        width: auto; 
+    }
+
+    .logo {
+        margin-right: 10px; 
+    }
+
+    .company-name {
+        font-size: 16px; 
     }
 
     .header-cta-section {
-        width: 100%;
-        justify-content: flex-end;
+        width: auto; 
         gap: 10px;
         padding-top: 10px;
     }
 
-    .logo {
-        padding-left: 10px;
-    }
-
-    .company-name {
-        font-size: 18px;
-    }
-
     .header-nav-list {
-        display: none;
+        display: none; /* Hide the nav list on smaller screens */
     }
 
     .header-button-container {
@@ -87,5 +88,3 @@
         gap: 10px;
     }
 }
-
-

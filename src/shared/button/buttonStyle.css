@@ -1,3 +1,4 @@
+/* Base styles */
 .btn {
     padding: 10px 20px;
     border: 1px solid transparent;
@@ -10,8 +11,6 @@
     transition: background-color 0.3s, color 0.3s;
     background-color: #1F4B43; 
     color:#fff; 
-
-    
 }
 
 .btn:hover {
@@ -19,7 +18,6 @@
 }
 
 .outline {
-    
     border: 1px solid #1f4b43;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -30,10 +28,35 @@
     font-size: 14px;
     font-weight: normal;
     cursor: pointer;
-    
 }
 
 .outline:hover {
     background-color: #f0f0f0; 
     color: #1F4B43; 
+}
+
+
+/* Tablets and small desktops */
+@media (max-width: 992px) {
+    .btn, .outline {
+        font-size: 12px;
+        padding: 7px 15px;
+        margin-left: 12px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .btn, .outline {
+        font-size: 10px;
+        padding: 5px 11px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+    .btn, .outline {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
 }
